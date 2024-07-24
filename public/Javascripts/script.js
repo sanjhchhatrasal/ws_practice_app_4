@@ -59,7 +59,7 @@ socket.on("recieve-message", function(data){
         ${userDisplay}
        </div>
        
-        <div class="msg w-[fit-content] bg-emerald-700 rounded-lg px-3 py-2 rounded-tr-[0] mt-2 ml-32">
+        <div class="msg w-[fit-content] bg-emerald-700 rounded-lg px-3 py-2 rounded-tr-[0] mt-2 lg:ml-32 ml-2">
            <h4 class="word-wrap ">${message}</h4>
            <p class="font-light text-zinc-300 text-sm text-end">${time}</p>
        </div>
@@ -72,7 +72,7 @@ socket.on("recieve-message", function(data){
                         ${userDisplay}
                          </div>
                         
-                         <div class="msg w-[fit-content] bg-zinc-700 rounded-lg px-3 py-2 rounded-tl-[0] mt-2 mr-32">
+                         <div class="msg w-[fit-content] bg-zinc-700 rounded-lg px-3 py-2 rounded-tl-[0] mt-2 lg:mr-32 mr-2">
                         <h4 class="word-wrap ">${message}</h4>
                         <p class="font-light text-zinc-300 text-sm text-end">${time}</p>
                         </div>
