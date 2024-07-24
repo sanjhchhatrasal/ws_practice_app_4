@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+<style>
+    .content::-webkit-scrollbar{
+        display: none;
+    }
+</style>
+</head>
+<body>
+    <div class="main h-screen w-full bg-zinc-900 text-white">
+        <div class="namePage fixed h-screen w-full bg-zinc-900 flex items-center justify-center">
+            <div class="py-4 px-6 bg-zinc-300/10 rounded-lg flex items-center justify-between">
+                <textarea class="name-input bg-transparent outline-none resize-none text-xl" placeholder="Write Your Name..." rows="1"></textarea>
+                <div class="set-name px-5 py-2 bg-gradient-to-r from-pink-400 to-purple-700  cursor-pointer">
+                    <h4 class="whitespace-nowrap font-semibold">Set Your Name</h4>
+                </div>
+            </div>
+        </div>
+        <div class="main-chat h-screen w-full bg-zinc-900 flex">
+            <div class="left-panel h-full w-[30%] bg-zinc-300/10">
+                <div class="top-nav h-[10%] w-full bg-gradient-to-r from-pink-300 to-cyan-700 px-3 flex items-center">
+                    <h1 class="lg:text-3xl text-xl font-semibold">Active Users</h1>
+                </div>
+                <div class="users h-[90%] w-full flex flex-col items-center pt-5">
+                   
+                </div>
+            </div>
+            <div class="right-panel h-full w-[70%] bg-zinc-500/10 flex flex-col justify-between">
+                <div class="nav h-[10%] w-full bg-zinc-500/10 flex items-center justify-between px-5">
+                    <div class="flex items-center gap-5">
+                        <div>
+                            <h1 class="username text-2xl font-semibold">User</h1>
+                            <p class="typing text-emerald-400 font-semibold"></p>
+                        </div>
+                    <div class="text-emerald-400 mt-1"><span class="live mr-1">2</span><i class="ri-circle-fill"></i></div>
+                    </div>
+                    <div class="px-2 py-1 bg-emerald-400 rounded-lg">
+                        <a href="/">Reset Name</a>
+                    </div>
+                </div>
+                <div class="content h-[80%] w-full overflow-y-auto overflow-hidden px-4 flex flex-col">
+                    
+                </div>
+                <div class="flex items-center justify-between px-3 py-2 w-full bg-zinc-300/10">
+                    <input class="msg-input outline-none resize-none bg-transparent w-full" placeholder="Type a message..."  id="">
+                    <div class="send-btn px-3 py-2 bg-gradient-to-r from-pink-400 to-purple-700 cursor-pointer"><i class="ri-send-plane-2-fill"></i></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="https://cdn.socket.io/4.7.5/socket.io.min.js" integrity="sha384-2huaZvOR9iDzHqslqwpR87isEmrfxqyWOF7hr7BY6KG0+hVKLoEXMPUJw3ynWuhO" crossorigin="anonymous"></script>
+    <script src="/Javascripts/script.js"></script>
+</body>
+</html>
