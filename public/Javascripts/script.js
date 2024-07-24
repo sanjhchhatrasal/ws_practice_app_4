@@ -55,7 +55,7 @@ socket.on("recieve-message", function(data){
     if(data.id === socket.id){
        content.innerHTML +=  ` <div class="flex self-end">
        <div>
-       <div class="text-zinc-300 text-sm text-end">
+       <div class="text-zinc-300 text-sm text-end mt-2">
         ${userDisplay}
        </div>
        
@@ -68,7 +68,7 @@ socket.on("recieve-message", function(data){
     }else{
         content.innerHTML += `  <div class="flex">
                       <div>
-                        <div class="text-zinc-300 text-sm text-start">
+                        <div class="text-zinc-300 text-sm text-start mt-2">
                         ${userDisplay}
                          </div>
                         
